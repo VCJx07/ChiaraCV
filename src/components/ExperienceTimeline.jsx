@@ -1,6 +1,6 @@
 import { experiences } from '../content';
 import { motion } from 'framer-motion';
-import expImg from '../assets/hero.jpg';
+import expImg from '../assets/esperienze.png';
 
 import {
   Hotel,
@@ -69,10 +69,15 @@ export default function ExperienceTimeline() {
 
         {/* IMMAGINE */}
         <div>
-          <img
+          <motion.img
+          className="rounded-2xl shadow-lg object-cover w-full h-[980px]"
+          initial={{ opacity: 0, x: 30 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.6, delay: 0.15 }}
+          viewport={{ once: true }}
             src={expImg}
             alt="Esperienze professionali"
-            className="rounded-xl shadow-md w-full h-[500px] object-cover lg:sticky lg:top-24"
+  
           />
         </div>
       </div>

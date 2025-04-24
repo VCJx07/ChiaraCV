@@ -55,7 +55,7 @@ export default function RecognitionsSection() {
 
       <div className="text-center mt-10">
         <a
-          href="/RecognizeNow!.pdf"
+          href={import.meta.env.BASE_URL + "recognize-now.pdf"}
           download
           className="inline-block bg-primary text-white px-6 py-3 rounded-md font-medium hover:bg-primary/90 transition"
         >

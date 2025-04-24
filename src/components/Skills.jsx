@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { skills } from '../content';
-import competenzeImg from '../assets/hero2.jpg'; // usa l'immagine che preferisci
+import competenzeImg from '../assets/competenze.png'; // usa l'immagine che preferisci
 
 export default function SkillsSection() {
   return (
@@ -10,10 +10,14 @@ export default function SkillsSection() {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         {/* Immagine a sinistra */}
         <div>
-          <img
-            src={competenzeImg}
-            alt="Reception desk"
-            className="rounded-xl shadow-md w-full object-cover"
+        <motion.img
+          className="rounded-2xl shadow-lg object-cover w-full h-[980px]"
+          initial={{ opacity: 0, x: 30 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.6, delay: 0.15 }}
+          viewport={{ once: true }}
+          src={competenzeImg}
+          alt="Reception desk"
           />
         </div>
 

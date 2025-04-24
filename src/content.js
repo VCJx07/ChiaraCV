@@ -1,5 +1,5 @@
-import heroImg from './assets/hero2.jpg';   // <– nuovo
-import profileImg from './assets/hero.jpg'; // copia qui la foto
+import heroImg from './assets/hero.jpg';   // <– nuovo
+import profileImg from './assets/profilo.png'; // copia qui la foto
 export const hero = {
     name: 'Chiara Giuffrè',
     claim: 'Esperienza nell\'Ospitalità di Eccellenza',
@@ -11,9 +11,6 @@ export const hero = {
     ],
     image: heroImg,
   };
-
-  // --- Profile section data -----------------------------
-
 
 export const profile = {
   title: 'Profilo Professionale',
@@ -68,8 +65,13 @@ export const experiences = [
   export const awards = [
     {
       title: "Dipendente del Mese",
-      count: 6,
-      desc: "Premiata sei volte al Disneyland Hotel per servizio clienti eccellente."
+      count: 2,
+      desc: "Premiata due volte al Disneyland Hotel per servizio clienti eccellente."
+    },
+    {
+      title: "Venditrice del Mese",
+      count: 1,
+      desc: "Premiata come miglior venditrice per aver raggiunto il più alto numero di vendite del mese."
     },
     {
       title: "Lettere di Elogio",
@@ -81,11 +83,6 @@ export const experiences = [
       count: "100%",
       desc: "Punteggio massimo nelle ultime tre valutazioni annuali."
     },
-    {
-      title: "Premio Innovazione",
-      count: 1,
-      desc: "Per aver introdotto un nuovo protocollo di accoglienza clienti."
-    }
   ]
 
   export const education = [
@@ -204,11 +201,26 @@ export const experiences = [
       },
     ],
     digital: [
-      'Software CAT: MemoQ, SDL Trados, Matecat',
-      'Microsoft Office: Word, Excel, PowerPoint',
-      'Google Workspace: Docs, Drive, Forms, Slide, Classroom, Meet',
-      'Collaborazione online e gestione file condivisi',
-      'Opera PMS – Formazione interna su prenotazioni e front office'
+      {
+        label: 'Software CAT',
+        desc: 'MemoQ, SDL Trados, Matecat'
+      },
+      {
+        label: 'Microsoft Office',
+        desc: 'Word, Excel, PowerPoint'
+      },
+      {
+        label: 'Google Workspace',
+        desc: 'Docs, Drive, Forms, Slide, Classroom, Meet'
+      },
+      {
+        label: 'Software CAT',
+        desc: 'Collaborazione online e gestione file condivisi'
+      },
+      {
+        label: 'Software Alberghieri',
+        desc: 'Opera PMS – Formazione interna su prenotazioni e front office, travelbox'
+      },
     ],
     other: [
       'Proofreading e revisione linguistica professionale',
@@ -233,6 +245,18 @@ export const experiences = [
       }
     ]
   };
+
+  export const links = [
+    { label: 'Home', href: '#hero' },
+    { label: 'Profilo', href: '#profilo' },
+    { label: 'Esperienze', href: '#esperienze' },
+    { label: 'Riconoscimenti', href: '#premi' },
+    { label: 'Formazione', href: '#formazione' },
+    { label: 'Lingue', href: '#lingue' },
+    { label: 'Competenze', href: '#competenze' },
+    { label: 'Contatti', href: '#contatti' },
+  ];
+  
   
   
   

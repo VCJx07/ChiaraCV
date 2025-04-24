@@ -1,15 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
-
-const links = [
-    { label: 'Home', href: '#hero' },
-  { label: 'Profilo', href: '#profile' },
-  { label: 'Esperienze', href: '#esperienze' },
-  { label: 'Competenze', href: '#competenze' },
-  { label: 'Formazione', href: '#formazione' },
-  { label: 'Lingue', href: '#lingue' },
-  { label: 'Contatti', href: '#contatti' },
-];
+import { links } from '../content';
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -23,10 +14,10 @@ export default function Navbar() {
 
   return (
     <><nav
-          className={`fixed top-0 left-0 w-full z-50 transition-all backdrop-blur-md border-b border-primary/10 px-6 md:px-20 py-8 md:py-10 ${scrolled ? 'bg-white/100 shadow-sm' : 'bg-white/100'}`}
+          className={`fixed top-0 left-0 w-full z-50 transition-all backdrop-blur-md border-b border-primary/10 px-6 md:px-20 py-8 md:py-10 ${scrolled ? 'bg-white/100 shadow-sm' : 'bg-cream/100'}`}
       >
           <div className="flex justify-between items-center">
-              <span className="font-bold text-primary text-lg">CG</span>
+              <span className="font-bold text-primary text-lg"> </span>
 
               {/* Desktop menu */}
               <ul className="hidden md:flex gap-6 text-sm font-medium text-primary/80">

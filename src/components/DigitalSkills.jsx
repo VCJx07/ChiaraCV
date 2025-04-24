@@ -8,7 +8,7 @@ export default function DigitalSkillsSection() {
       <h2 className="text-3xl md:text-4xl font-semibold mb-12">Competenze Digitali</h2>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {skills.digital.map((text, idx) => (
+        {skills.digital.map((obj, idx) => (
           <motion.div
           key={idx}
           initial={{ opacity: 0, y: 30 }}
@@ -19,9 +19,9 @@ export default function DigitalSkillsSection() {
           >
             <div className="flex items-center gap-3 mb-4">
               <Monitor size={24} className="text-primary" />
-              <h3 className="text-base font-semibold leading-snug">Strumenti e Tecnologie</h3>
+              <h3 className="text-base font-semibold leading-snug">{obj.label}</h3>
             </div>
-            <p className="text-sm text-primary/80 leading-snug">{text}</p>
+            <p className="text-sm text-primary/80 leading-snug">{obj.desc}</p>
           </motion.div>
         ))}
       </div>
