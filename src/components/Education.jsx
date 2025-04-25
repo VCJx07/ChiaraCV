@@ -37,6 +37,21 @@ export default function EducationSection() {
           );
         })}
       </div>
+      <motion.div
+  initial={{ opacity: 0, y: 30 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.5, delay: education.length * 0.1 }}
+  viewport={{ once: true }}
+  className="text-center mt-10"
+>
+  <a
+    href={`${import.meta.env.BASE_URL}attestati.pdf`}
+    download
+    className="inline-block bg-primary text-white px-6 py-3 rounded-md font-medium hover:bg-primary/90 transition"
+  >
+    Scarica tutti i certificati e riconoscimentin in PDF
+  </a>
+</motion.div>
     </section>
   );
 }

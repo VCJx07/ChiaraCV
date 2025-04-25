@@ -22,7 +22,7 @@ const recognitions = [
 export default function RecognitionsSection() {
   return (
     <section id="recognitions" className="py-20 px-6 md:px-20">
-      <h2 className="text-3xl md:text-4xl font-semibold mb-12">Riconoscimenti Disney</h2>
+      <h2 className="text-3xl md:text-4xl font-semibold mb-12">Cosa dicono di me</h2>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {recognitions.map((item, idx) => (
@@ -53,15 +53,21 @@ export default function RecognitionsSection() {
         ))}
       </div>
 
-      <div className="text-center mt-10">
-        <a
-          href={import.meta.env.BASE_URL + "recognize-now.pdf"}
-          download
-          className="inline-block bg-primary text-white px-6 py-3 rounded-md font-medium hover:bg-primary/90 transition"
-        >
-          Scarica tutte le Recognitions in PDF
-        </a>
-      </div>
+      <motion.div
+  initial={{ opacity: 0, y: 30 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.5, delay: 0.1 }}
+  viewport={{ once: true }}
+  className="text-center mt-10"
+>
+  <a
+    href={import.meta.env.BASE_URL + "recognize-now.pdf"}
+    download
+    className="inline-block bg-primary text-white px-6 py-3 rounded-md font-medium hover:bg-primary/90 transition"
+  >
+    Scarica tutte le recensioni in PDF
+  </a>
+</motion.div>
     </section>
   );
 }

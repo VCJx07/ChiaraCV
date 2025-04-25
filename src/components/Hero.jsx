@@ -22,10 +22,34 @@ export default function Hero() {
             <a
               key='Scarica CV completo'
               download
-              href='/ChiaraGiuffreCV.pdf'
+              href={import.meta.env.BASE_URL + 'ChiaraGiuffreCV.pdf'}
               className="px-6 py-3 rounded-xl bg-primary text-cream hover:opacity-90 transition"
             >
               Scarica CV Completo
+            </a>
+            <a
+              key='Scarica CV completo ITA'
+              download
+              href={import.meta.env.BASE_URL + 'ChiaraGiuffreCV.pdf'}
+              className="px-6 py-3 rounded-xl bg-primary text-cream hover:opacity-90 transition"
+            >
+              Scarica CV Europass ITA
+            </a>
+            <a
+              key='Scarica CV completo ENG'
+              download
+              href={import.meta.env.BASE_URL + 'ChiaraGiuffreCV.pdf'}
+              className="px-6 py-3 rounded-xl bg-primary text-cream hover:opacity-90 transition"
+            >
+              Scarica CV Europass ENG
+            </a>
+            <a
+              key='Scarica CV completo FR'
+              download
+              href={import.meta.env.BASE_URL + 'ChiaraGiuffreCV.pdf'}
+              className="px-6 py-3 rounded-xl bg-primary text-cream hover:opacity-90 transition"
+            >
+              Scarica CV Europass FR
             </a>
             <a
               key='Contattami'
