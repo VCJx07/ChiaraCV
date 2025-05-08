@@ -4,7 +4,7 @@ export default function Footer() {
         <div className="text-center text-sm space-y-2">
           <p>© {new Date().getFullYear()} Chiara Giuffrè – Tutti i diritti riservati</p>
           <p>
-            Progetto realizzato con ❤️ usando Vite + TailwindCSS – Design by Vittorio
+            Progetto fatto con ❤️ per Chiara Giuffrè – Design by Vittorio
           </p>
         </div>
       </footer>

@@ -14,7 +14,7 @@ export default function Hero() {
         transition={{ duration: 0.6 }}
       >
         <h1 className="text-4xl md:text-5xl font-semibold leading-tight mb-6">
-          {hero.name}: <span className="block">{hero.claim}</span>
+          <span style={{ color: '#960018' }}> {hero.name} </span> <span className="block">{hero.claim}</span>
         </h1>
         <p className="text-lg mb-8 max-w-xl">{hero.intro}</p>
 
@@ -30,7 +30,7 @@ export default function Hero() {
             <a
               key='Scarica CV completo ITA'
               download
-              href={import.meta.env.BASE_URL + 'ChiaraGiuffreCV.pdf'}
+              href={import.meta.env.BASE_URL + 'ChiaraGiuffre-EuropassCV-IT.pdf'}
               className="px-6 py-3 rounded-xl bg-primary text-cream hover:opacity-90 transition"
             >
               Scarica CV Europass ITA
@@ -38,7 +38,7 @@ export default function Hero() {
             <a
               key='Scarica CV completo ENG'
               download
-              href={import.meta.env.BASE_URL + 'ChiaraGiuffreCV.pdf'}
+              href={import.meta.env.BASE_URL + 'ChiaraGiuffre-EuropassCV-EN.pdf'}
               className="px-6 py-3 rounded-xl bg-primary text-cream hover:opacity-90 transition"
             >
               Scarica CV Europass ENG
@@ -46,7 +46,7 @@ export default function Hero() {
             <a
               key='Scarica CV completo FR'
               download
-              href={import.meta.env.BASE_URL + 'ChiaraGiuffreCV.pdf'}
+              href={import.meta.env.BASE_URL + 'ChiaraGiuffre-EuropassCV-FR.pdf'}
               className="px-6 py-3 rounded-xl bg-primary text-cream hover:opacity-90 transition"
             >
               Scarica CV Europass FR
@@ -65,7 +65,7 @@ export default function Hero() {
       <motion.img
         src={hero.image}
         alt={hero.name}
-        className="rounded-2xl shadow-lg object-cover w-full h-[980px]"
+        className="rounded-2xl shadow-lg object-cover w-full h-[780px]"
         initial={{ opacity: 0, x: 40 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.6, delay: 0.2 }}

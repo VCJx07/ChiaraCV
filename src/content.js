@@ -2,9 +2,9 @@ import heroImg from './assets/hero.jpg';   // <– nuovo
 import profileImg from './assets/profilo.png'; // copia qui la foto
 export const hero = {
     name: 'Chiara Giuffrè',
-    claim: 'Esperienza nell\'Ospitalità di Eccellenza',
+   claim: "Receptionist multilingue",
     intro:
-      'Un percorso professionale dedicato all\'eccellenza nell\'ospitalità, forgiato ... trasformo momenti ordinari in ricordi straordinari per ogni ospite.',
+      'Receptionist multilingue con esperienza internazionale in contesti dinamici. Specializzata nell’accoglienza e nella gestione del front office, comunico con disinvoltura in italiano, inglese, francese e spagnolo, offrendo un servizio professionale e attento in ambienti multiculturali.',
     buttons: [
       { label: 'Scarica CV completo', href: '/ChiaraGiuffreCV.pdf' },
       { label: 'Contattami', href: '#contatti' },
@@ -17,7 +17,7 @@ export const profile = {
   paragraphs: [
     `Receptionist  con oltre un anno e mezzo di esperienza presso gli hotel tematici del gruppo Disney. 
     Laureata in Mediazione Linguistica, con eccellenti capacità relazionali e padronanza di inglese, francese e spagnolo. 
-    Cerco un'opportunità nel settore alberghiero a Palermo, dove portare le competenze acquisite in contesto internazionale`,
+    Cerco un'opportunità nel settore alberghiero a Palermo, dove portare le competenze acquisite in contesto internazionale.`,
   ],
   image: profileImg,
 };
@@ -33,7 +33,7 @@ export const experiences = [
   {
     period: '2023 – 2024',
     role: 'Whig Italy – Account manager',
-    desc: 'Supporto nella gestione e fidelizzazione di clienti internazionali per una startup nel settore blockchain. Coordinamento di campagne digitali e comunicazione multilingue, contribuendo alla crescita del portafoglio clienti.',
+    desc: 'Gestione clienti internazionali e supporto alla comunicazione multilingue per una startup di marketing legata all’organizzazione di tornei ed eventi a tema Pokémon. Contributo attivo alla crescita del pubblico e alla promozione di campagne digitali.',
     icon: 'briefcase'
   },
   {
@@ -51,7 +51,7 @@ export const experiences = [
   {
     period: '2021–2022',
     role: 'Aeroporto Falcone e Borsellino',
-    desc: 'Assistenza presso l’info point aeroportuale, fornendo informazioni e supporto logistico ai passeggeri. Collaborazione con il personale di terra per garantire un flusso passeggeri efficiente e sicuro.',
+    desc: "Assistenza presso l'info point aeroportuale, fornendo informazioni e supporto logistico ai passeggeri. Gestione di pratiche lost and found in inglese, francese e spagnolo. Collaborazione con il personale di terra per garantire un flusso passeggeri efficiente e sicuro.",
     icon: 'plane'
   },
   {
@@ -64,13 +64,13 @@ export const experiences = [
 
   export const awards = [
     {
-      title: "Dipendente del Mese",
-      count: 2,
-      desc: "Premiata due volte al Disneyland Hotel per servizio clienti eccellente."
+      title: "Dipendente del mese",
+      count: 1,
+      desc: "Premiata come Dipendente del Mese per l’eccellenza nel servizio clienti e l’attenzione costante alle esigenze degli ospiti."
     },
     {
       title: "Venditrice del Mese",
-      count: 1,
+      count: 2,
       desc: "Premiata come miglior venditrice per aver raggiunto il più alto numero di vendite del mese."
     },
     {
@@ -87,15 +87,15 @@ export const experiences = [
 
   export const education = [
     {
-      title: "Laurea in Mediazione Linguistica (L12)",
-      desc: "Scuola Superiore per Mediatori Linguistici, 2019–2022.",
-      period: "2019–2022",
-      icon: "diploma",
-    },
-    {
       title: "Diploma linguistico",
       desc: 'Liceo delle Scienze Umane e Linguistico "Danilo Dolci".',
       period: "2014–2019",
+      icon: "diploma",
+    },
+    {
+      title: "Laurea in Mediazione Linguistica (L12)",
+      desc: "Scuola Superiore per Mediatori Linguistici, 2019–2022.",
+      period: "2019–2022",
       icon: "diploma",
     },
     {
@@ -115,6 +115,7 @@ export const experiences = [
       desc: "Certificato per il livello C1 di inglese (11/2022).",
       period: "11/2022",
       icon: "course",
+      certLink: "https://www.efset.org/cert/LJhUGU"
     },
     {
       title: "Formazione Privacy Disney",
@@ -123,8 +124,8 @@ export const experiences = [
       icon: "privacy",
     },
     {
-      title: "Corso base accoglienza clienti",
-      desc: "Formazione introduttiva su servizio clienti e gestione richieste.",
+      title: "Corso di accoglienza clienti",
+      desc: "Formazione su servizio clienti e gestione richieste.",
       period: "2022",
       icon: "training",
     },
@@ -135,8 +136,8 @@ export const experiences = [
       icon: "security",
     },
     {
-      title: "Formazione interna Opera PMS",
-      desc: "Uso del gestionale per prenotazioni e anagrafica clienti (Disneyland).",
+      title: "Formazione interna Opera PMS e Travelbox",
+      desc: "Uso dei gestionali per prenotazioni, anagrafica clienti e gestione camere.",
       period: "2022–2023",
       icon: "training",
     },
@@ -202,6 +203,10 @@ export const experiences = [
     ],
     digital: [
       {
+        label: 'Software Alberghieri',
+        desc: 'Opera PMS e TravelBox – Formazione interna su prenotazioni, assegnamento camere e front office'
+      },
+      {
         label: 'Software CAT',
         desc: 'MemoQ, SDL Trados, Matecat'
       },
@@ -214,13 +219,9 @@ export const experiences = [
         desc: 'Docs, Drive, Forms, Slide, Classroom, Meet'
       },
       {
-        label: 'Software CAT',
+        label: 'Competenze complementari',
         desc: 'Collaborazione online e gestione file condivisi'
-      },
-      {
-        label: 'Software Alberghieri',
-        desc: 'Opera PMS – Formazione interna su prenotazioni e front office, travelbox'
-      },
+      }
     ],
     other: [
       'Proofreading e revisione linguistica professionale',

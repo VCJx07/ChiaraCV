@@ -68,18 +68,17 @@ export default function ExperienceTimeline() {
         </div>
 
         {/* IMMAGINE */}
-        <div>
+       {  <div>
           <motion.img
-          className="rounded-2xl shadow-lg object-cover w-full h-[980px]"
+          className="hidden md:block w-300 h-[940px]"
           initial={{ opacity: 0, x: 30 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.15 }}
           viewport={{ once: true }}
             src={expImg}
             alt="Esperienze professionali"
-  
           />
-        </div>
+        </div> }
       </div>
     </section>
   );

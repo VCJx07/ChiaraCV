@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { skills } from '../content';
-import competenzeImg from '../assets/competenze.png'; // usa l'immagine che preferisci
+import competenzeImg from '../assets/competenze.png';
 
 export default function SkillsSection() {
   return (
@@ -11,7 +11,7 @@ export default function SkillsSection() {
         {/* Immagine a sinistra */}
         <div>
         <motion.img
-          className="rounded-2xl shadow-lg object-cover w-full h-[980px]"
+          className="hidden md:block rounded-2xl shadow-lg object-cover w-full h-[500px]"
           initial={{ opacity: 0, x: 30 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.15 }}

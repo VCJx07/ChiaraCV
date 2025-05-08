@@ -33,6 +33,16 @@ export default function EducationSection() {
               </div>
               <p className="text-sm text-primary/80 leading-snug">{item.desc}</p>
               <p className="text-xs text-primary/60 mt-2">{item.period}</p>
+              {item.certLink && (
+                <a
+                  href={item.certLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm text-primary underline mt-3 inline-block hover:text-primary/80 transition"
+                >
+                  Visualizza certificato
+                </a>
+              )}
             </motion.div>
           );
         })}
@@ -45,11 +55,11 @@ export default function EducationSection() {
   className="text-center mt-10"
 >
   <a
-    href={`${import.meta.env.BASE_URL}attestati.pdf`}
+    href={`${import.meta.env.BASE_URL}Certificazioni.pdf`}
     download
     className="inline-block bg-primary text-white px-6 py-3 rounded-md font-medium hover:bg-primary/90 transition"
   >
-    Scarica tutti i certificati e riconoscimentin in PDF
+    Scarica tutti i certificati in PDF
   </a>
 </motion.div>
     </section>
