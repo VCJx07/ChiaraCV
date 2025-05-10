@@ -1,29 +1,11 @@
 import { motion } from 'framer-motion';
 import { Star } from 'lucide-react';
-
-const recognitions = [
-  {
-    text: 'Ti ringrazio molto per la tua presenza e la collaborazione. Il tuo lavoro di squadra durante il servizio colazione è stato esemplare. Hai avuto un ruolo chiave nel buon funzionamento delle operazioni.',
-    author: 'Stéphane Tardieu – Supervisore, Disneyland Hotel',
-    keys: ['Cortesia', 'Inclusione', 'Efficienza']
-  },
-  {
-    text: 'Chiara è stata citata da un ospite per gentilezza, disponibilità e sorriso. Qualità di servizio eccellente!',
-    author: 'Feedback ospite – Survey ufficiale Disney',
-    keys: ['Cortesia']
-  },
-  {
-    text: 'Complimenti per una vendita da quasi 500€ per una proposta di matrimonio. È stato un successo. Ottimo lavoro Partner!',
-    author: 'Thomas Billet – Coordinatore vendite, Disneyland Paris',
-    keys: ['Creare Felicità per gli Altri']
-  }
-];
+import { recognitions } from '../content';
 
 export default function RecognitionsSection() {
   return (
     <section id="recognitions" className="py-20 px-6 md:px-20">
       <h2 className="text-3xl md:text-4xl font-semibold mb-12">Cosa dicono di me</h2>
-
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {recognitions.map((item, idx) => (
           <motion.div
@@ -52,22 +34,21 @@ export default function RecognitionsSection() {
           </motion.div>
         ))}
       </div>
-
       <motion.div
-  initial={{ opacity: 0, y: 30 }}
-  whileInView={{ opacity: 1, y: 0 }}
-  transition={{ duration: 0.5, delay: 0.1 }}
-  viewport={{ once: true }}
-  className="text-center mt-10"
->
-  <a
-    href={import.meta.env.BASE_URL + "recognize-now.pdf"}
-    download
-    className="inline-block bg-primary text-white px-6 py-3 rounded-md font-medium hover:bg-primary/90 transition"
-  >
-    Scarica tutte le recensioni in PDF
-  </a>
-</motion.div>
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.1 }}
+        viewport={{ once: true }}
+        className="text-center mt-10"
+      >
+        <a
+          href={import.meta.env.BASE_URL + 'recognize-now.pdf'}
+          download
+          className="inline-block bg-primary text-white px-6 py-3 rounded-md font-medium hover:bg-primary/90 transition"
+        >
+          Scarica tutte le recensioni in PDF
+        </a>
+      </motion.div>
     </section>
   );
 }

@@ -4,15 +4,16 @@ export default {
   theme: {
     extend: {
       colors: {
-        cream:   '#EFF0E5',
-        beige:   '#E4DDC9',
-        accent:  '#1E1E18', 
+        cream: '#EFF0E5',
+        beige: '#E4DDC9',
+        accent: '#1E1E18',
         primary: '#2E2E25',
-      fontFamily: {
-        sans: ['Inter', 'sans-serif'],
+        secondary: '#960018',
+        fontFamily: {
+          sans: ['Inter', 'sans-serif'],
+        },
       },
     },
+    plugins: [],
   },
-  plugins: [],
-}
-}
+};

@@ -5,7 +5,6 @@ export default function LanguageSkillsSection() {
   return (
     <section id="lingue" className="py-20 px-6 md:px-20">
       <h2 className="text-3xl md:text-4xl font-semibold mb-12">Competenze Linguistiche</h2>
-
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
         {languages.map((lang, idx) => (
           <motion.div
@@ -23,7 +22,7 @@ export default function LanguageSkillsSection() {
               {[...Array(5)].map((_, i) => (
                 <div
                   key={i}
-                  className={`w-5 h-1.5 rounded-full ${i < lang.levelIndex ? 'bg-primary' : 'bg-primary/20'}`}
+                  className={`w-5 h-1.5 rounded-full ${i < lang.levelIndex ? 'bg-secondary' : 'bg-primary/20'}`}
                 />
               ))}
             </div>
